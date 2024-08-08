@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      /* Define the custom font family */
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+      /* Apply the font family using Tailwind utility classes */
+      .font-playfair {
+        font-family: "Playfair Display", serif;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body class="font-playfair bg-white">
+    <div class="navbar bg-white text-black">
+      <div class="flex-1">
+        <a class="text-3xl font-lighter">INFO BAO</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal px-1">
+          <li class="text-[16px]"><a href="/">Home</a></li>
+          <li class="text-[16px]"><a href="/about.html">About Us</a></li>
+          <li class="text-[16px]"><a href="/blog.html">Blog</a></li>
+          <li class="text-[16px]"><a href="/info.html">Cosmetics Info</a></li>
+          <li class="text-[16px]"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full px-2 my-[70px] text-black">
+      <p class="w-full px-[109px] text-[#ABABAB]">Mary Kay / Moisturization</p>
+      <div class="flex w-full justify-around">
+        <img src="/img/2 22.png" alt="" />
+        <div class="w-[573px] h-[406px] flex flex-col gap-8">
+          <h1 class="text-[30px]">Mary Kay Extra Emollient Night Cream</h1>
+          <div>
+            <h1 class="text-[17px] font-bold">What is it for?</h1>
+            <ul type="disk" class="text-[16px]">
+              <li>Age: +18</li>
+              <li>Appointment: lifting, ancient, restoration.</li>
+              <li>Made in: USA</li>
+            </ul>
+          </div>
+          <div>
+            <h1 class="font-bold">Application:</h1>
+            <p>
+              To further moisturize the skin, wet your face with warm water,
+              then apply a small amount of the cream to your face and neck.
+            </p>
+          </div>
+          <div>
+            <h1 class="font-bold">Storage:</h1>
+            <p>
+              Petrolatum, Mineral Oil, Paraffin, Beeswax, Candelilla Wax,
+              Hydrogenated Soy Glyceride, Fragrance, Carnauba Wax, Stearic Acid,
+              Propylparaben, Butylparaben, Menthol, Red 17.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex px-[106px] py-10 justify-start items-start">
+        <button onclick="payWithPaystack()" class="btn btn-outline text-black">
+          Buy Now
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer p-10 bg-[#2F2F2F] text-white">
+      <aside>
+        <svg
+          width="50"
+          height="50"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          class="fill-current"
+        >
+          <path
+            d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
+          ></path>
+        </svg>
+        <p>INFO BAO Ltd.<br />2021 ©infobao. All Rights Reserved.</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Company</h6>
+        <a class="link link-hover">Information</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">News</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Location</h6>
+        <a class="link link-hover">South Los Angeles</a>
+        <a class="link link-hover">+1234567890</a>
+        <a class="link link-hover">We always ready speak with you!</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Get in touch</h6>
+        <a class="link link-hover">infobao-contact@gmail.com</a>
+        <a class="link link-hover">Instagtam</a>
+        <a class="link link-hover">Facebook</a>
+      </nav>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
